@@ -1,5 +1,5 @@
-language: generic 
 sudo: required
+language: generic 
 # Anytime we are making use of docker, we have to have superuser permissions in order to execute this build
 services: 
   - docker # We need the docker CLI pre-installed. Travis will automatically install a copy of docker into the container.
