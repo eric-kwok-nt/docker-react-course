@@ -22,7 +22,7 @@ deploy:
   # Travis CI comes pre-configured to deploy the application to a handful of different providers (AWS, Digital Ocean etc.)
   
   # Next, provide other options for further customization
-  region: "us-west-2" # Th region setting where the app was created
+  region: "us-east-2" # Th region setting where the app was created
   app: "Docker-react-app" # App name
   env: "Dockerreactapp-env" # Environment name
   bucket_name: "elasticbeanstalk-us-east-2-148347536296"
@@ -41,4 +41,4 @@ deploy:
   # DO NOT put the access keys directly in here as it will be push onto the public repository. Use a feature of environment secrets 
   # provided by Travis CI
   access_key_id: $AWS_ACCESS_KEY
-  secret_access_key: "$AWS_SECRET_KEY"
+  secret_access_key: $AWS_SECRET_KEY
