@@ -7,7 +7,7 @@ services:
 before-install: 
   # It is going to have a series of different commands that get executed before our tests are ran.
   # It will be a series of setups that needs to occur before we start to either deploy our project or before running tests
-  docker build -t xholyspirit/docker-react-course -f Dockerfile.dev .
+  - docker build -t xholyspirit/docker-react-course -f Dockerfile.dev .
 
 script:
   # The script section will contain all the different commands that need to be executed to run the test suites
